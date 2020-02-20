@@ -99,7 +99,7 @@ $Label6.Location=New-Object System.Drawing.Size(200,50)
 #Añadir etiqueta
 $Form3.Controls.Add($Label6)
 
-$Picture = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga.jpg"))
+$Picture = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\EntornoDesarollo\descarga.jpg"))
 $img = [System.Drawing.Image]::Fromfile($Picture)
 $pictureBox = new-object Windows.Forms.PictureBox
 $pictureBox.Width =  $img.Size.Width
@@ -109,7 +109,7 @@ $pictureBox.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
 $pictureBox.Location=New-Object System.Drawing.Size(100,100)
 $form3.controls.add($pictureBox)
 
-$Picture1 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga1.jpg"))
+$Picture1 =(get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\EntornoDesarollo\descarga1.jpg"))
 $img1 = [System.Drawing.Image]::Fromfile($Picture1)
 $pictureBox1 = new-object Windows.Forms.PictureBox
 $pictureBox1.Width =  $img1.Size.Width
@@ -119,7 +119,7 @@ $pictureBox1.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
 $pictureBox1.Location=New-Object System.Drawing.Size(300,100)
 $form3.controls.add($pictureBox1)
 
-$Picture2 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga2.jpg"))
+$Picture2 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\EntornoDesarollo\descarga2.jpg"))
 $img2 = [System.Drawing.Image]::Fromfile($Picture2)
 $pictureBox2 = new-object Windows.Forms.PictureBox
 $pictureBox2.Width =  $img2.Size.Width
@@ -129,7 +129,7 @@ $pictureBox2.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
 $pictureBox2.Location=New-Object System.Drawing.Size(100,200)
 $form3.controls.add($pictureBox2)
 
-$Picture3 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga3.jpg"))
+$Picture3 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\EntornoDesarollo\descarga3.jpg"))
 $img3 = [System.Drawing.Image]::Fromfile($Picture3)
 $pictureBox3 = new-object Windows.Forms.PictureBox
 $pictureBox3.Width =  $img3.Size.Width
@@ -239,7 +239,7 @@ $Label6.Location=New-Object System.Drawing.Size(200,50)
 #Añadir etiqueta
 $Form3.Controls.Add($Label6)
 
-$Picture = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga.jpg"))
+$Picture = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\EntornoDesarollo\descarga.jpg"))
 $img = [System.Drawing.Image]::Fromfile($Picture)
 $pictureBox = new-object Windows.Forms.PictureBox
 $pictureBox.Width =  $img.Size.Width
@@ -249,7 +249,7 @@ $pictureBox.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
 $pictureBox.Location=New-Object System.Drawing.Size(100,100)
 $form3.controls.add($pictureBox)
 
-$Picture1 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga1.jpg"))
+$Picture1 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\EntornoDesarollo\descarga1.jpg"))
 $img1 = [System.Drawing.Image]::Fromfile($Picture1)
 $pictureBox1 = new-object Windows.Forms.PictureBox
 $pictureBox1.Width =  $img1.Size.Width
@@ -259,7 +259,7 @@ $pictureBox1.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
 $pictureBox1.Location=New-Object System.Drawing.Size(300,100)
 $form3.controls.add($pictureBox1)
 
-$Picture2 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga2.jpg"))
+$Picture2 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\EntornoDesarollo\descarga2.jpg"))
 $img2 = [System.Drawing.Image]::Fromfile($Picture2)
 $pictureBox2 = new-object Windows.Forms.PictureBox
 $pictureBox2.Width =  $img2.Size.Width
@@ -269,7 +269,7 @@ $pictureBox2.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
 $pictureBox2.Location=New-Object System.Drawing.Size(100,200)
 $form3.controls.add($pictureBox2)
 
-$Picture3 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga3.jpg"))
+$Picture3 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\EntornoDesarollo\descarga3.jpg"))
 $img3 = [System.Drawing.Image]::Fromfile($Picture3)
 $pictureBox3 = new-object Windows.Forms.PictureBox
 $pictureBox3.Width =  $img3.Size.Width
@@ -332,7 +332,7 @@ $Label6.Location=New-Object System.Drawing.Size(200,50)
 $Form3.Controls.Add($Label6)
 
 
-$Picture = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga.jpg"))
+$Picture = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\EntornoDesarollo\descarga.jpg"))
 $img = [System.Drawing.Image]::Fromfile($Picture)
 $pictureBox = new-object Windows.Forms.PictureBox
 $pictureBox.Width =  $img.Size.Width
@@ -342,7 +342,7 @@ $pictureBox.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
 $pictureBox.Location=New-Object System.Drawing.Size(100,100)
 $form3.controls.add($pictureBox)
 
-$Picture1 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga1.jpg"))
+$Picture1 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\EntornoDesarollo\descarga1.jpg"))
 $img1 = [System.Drawing.Image]::Fromfile($Picture1)
 $pictureBox1 = new-object Windows.Forms.PictureBox
 $pictureBox1.Width =  $img1.Size.Width
@@ -352,7 +352,7 @@ $pictureBox1.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
 $pictureBox1.Location=New-Object System.Drawing.Size(300,100)
 $form3.controls.add($pictureBox1)
 
-$Picture2 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga2.jpg"))
+$Picture2 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\EntornoDesarollo\descarga2.jpg"))
 $img2 = [System.Drawing.Image]::Fromfile($Picture2)
 $pictureBox2 = new-object Windows.Forms.PictureBox
 $pictureBox2.Width =  $img2.Size.Width
@@ -362,7 +362,7 @@ $pictureBox2.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
 $pictureBox2.Location=New-Object System.Drawing.Size(100,200)
 $form3.controls.add($pictureBox2)
 
-$Picture3 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga3.jpg"))
+$Picture3 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\EntornoDesarollo\descarga3.jpg"))
 $img3 = [System.Drawing.Image]::Fromfile($Picture3)
 $pictureBox3 = new-object Windows.Forms.PictureBox
 $pictureBox3.Width =  $img3.Size.Width
