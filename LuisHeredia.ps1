@@ -1,0 +1,405 @@
+﻿#Formulario
+$Form=New-Object System.Windows.Forms.Form
+$Form.Text="Compra online Media Mark"
+$Form.Size=New-Object System.Drawing.Size(500,500)
+$Form.StartPosition="CenterScreen"
+#Etiqueta
+$Label=New-Object System.Windows.Forms.Label
+$Label.Text="Elige una opcion: "
+$Label.AutoSize=$True
+$Label.Location=New-Object System.Drawing.Size(200,100)
+#Añadir etiqueta
+$Form.Controls.Add($Label)
+
+ 
+#Botón-------------------------------------------------------------------------------------------------------
+$Button=New-Object System.Windows.Forms.Button
+$Button.Size=New-Object System.Drawing.Size(80,23)
+$Button.Text="Registrate"
+$Button.Location=New-Object System.Drawing.Size(200,200)
+#Añadir botón
+$Form.Controls.Add($Button)
+$Button.add_click({
+
+
+#Crear un formulario, añadir una etiqueta y un botón
+#Formulario
+$Form2=New-Object System.Windows.Forms.Form
+$Form2.Text="Registrar"
+$Form2.Size=New-Object System.Drawing.Size(500,500)
+$Form2.StartPosition="CenterScreen"
+$label2 = New-Object System.Windows.Forms.Label
+$label2.Location = New-Object System.Drawing.Point(140,30)
+$label2.Size = New-Object System.Drawing.Size(280,20)
+$label2.Text = 'Introduce tus datos para registrarte'
+$Form2.Controls.Add($label2)
+#nombre
+$textBox = New-Object System.Windows.Forms.TextBox
+$textBox.Location = New-Object System.Drawing.Point(150,110)
+$label3 = New-Object System.Windows.Forms.Label
+$label3.Location = New-Object System.Drawing.Point(50,110)
+$label3.Size = New-Object System.Drawing.Size(80,20)
+$label3.Text = 'Nombre :'
+$Form2.Controls.Add($label3)
+$textBox.Size = New-Object System.Drawing.Size(260,20)
+$Form2.Controls.Add($textBox)
+#apellido
+$textBox1 = New-Object System.Windows.Forms.TextBox
+$textBox1.Location = New-Object System.Drawing.Point(150,150)
+$label4 = New-Object System.Windows.Forms.Label
+$label4.Location = New-Object System.Drawing.Point(50,150)
+$label4.Size = New-Object System.Drawing.Size(80,20)
+$label4.Text = 'Apellido:'
+$Form2.Controls.Add($label4)
+$textBox1.Size = New-Object System.Drawing.Size(260,20)
+$Form2.Controls.Add($textBox1)
+#correo
+$textBox1 = New-Object System.Windows.Forms.TextBox
+$textBox1.Location = New-Object System.Drawing.Point(150,190)
+$label4 = New-Object System.Windows.Forms.Label
+$label4.Location = New-Object System.Drawing.Point(50,190)
+$label4.Size = New-Object System.Drawing.Size(80,20)
+$label4.Text = 'Correo:'
+$Form2.Controls.Add($label4)
+$textBox1.Size = New-Object System.Drawing.Size(260,20)
+$form2.Controls.Add($textBox1)
+#contraseña
+$textBox1 = New-Object System.Windows.Forms.TextBox
+$textBox1.Location = New-Object System.Drawing.Point(150,230)
+$label5 = New-Object System.Windows.Forms.Label
+$label5.Location = New-Object System.Drawing.Point(50,230)
+$label5.Size = New-Object System.Drawing.Size(80,20)
+$label5.Text = 'Contraseña:'
+$Form2.Controls.Add($label5)
+$textBox1.Size = New-Object System.Drawing.Size(260,20)
+#contraseña oculta
+$textBox1.PasswordChar = '*'
+
+
+$Form2.Controls.Add($textBox1)
+
+#Botón registrar
+$Button5=New-Object System.Windows.Forms.Button
+$Button5.Size=New-Object System.Drawing.Size(75,23)
+$Button5.Text="Registrar"
+$Button5.Location=New-Object System.Drawing.Size(150,300)
+#Añadir botón resgistrar
+$Form2.Controls.Add($Button5)
+$Button5.add_click({
+#Formulario
+$Form3=New-Object System.Windows.Forms.Form
+$Form3.Text="Compra online Media Mark"
+$Form3.Size=New-Object System.Drawing.Size(500,500)
+$Form3.StartPosition="CenterScreen"
+#Etiqueta
+$Label6=New-Object System.Windows.Forms.Label
+$Label6.Text="BIENVENIDO"
+$Label6.AutoSize=$True
+$Label6.Location=New-Object System.Drawing.Size(200,50)
+#Añadir etiqueta
+$Form3.Controls.Add($Label6)
+
+$Picture = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga.jpg"))
+$img = [System.Drawing.Image]::Fromfile($Picture)
+$pictureBox = new-object Windows.Forms.PictureBox
+$pictureBox.Width =  $img.Size.Width
+$pictureBox.Height =  $img.Size.Height
+$pictureBox.Image = $img
+$pictureBox.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
+$pictureBox.Location=New-Object System.Drawing.Size(100,100)
+$form3.controls.add($pictureBox)
+
+$Picture1 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga1.jpg"))
+$img1 = [System.Drawing.Image]::Fromfile($Picture1)
+$pictureBox1 = new-object Windows.Forms.PictureBox
+$pictureBox1.Width =  $img1.Size.Width
+$pictureBox1.Height =  $img1.Size.Height
+$pictureBox1.Image = $img1
+$pictureBox1.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
+$pictureBox1.Location=New-Object System.Drawing.Size(300,100)
+$form3.controls.add($pictureBox1)
+
+$Picture2 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga2.jpg"))
+$img2 = [System.Drawing.Image]::Fromfile($Picture2)
+$pictureBox2 = new-object Windows.Forms.PictureBox
+$pictureBox2.Width =  $img2.Size.Width
+$pictureBox2.Height =  $img2.Size.Height
+$pictureBox2.Image = $img2
+$pictureBox2.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
+$pictureBox2.Location=New-Object System.Drawing.Size(100,200)
+$form3.controls.add($pictureBox2)
+
+$Picture3 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga3.jpg"))
+$img3 = [System.Drawing.Image]::Fromfile($Picture3)
+$pictureBox3 = new-object Windows.Forms.PictureBox
+$pictureBox3.Width =  $img3.Size.Width
+$pictureBox3.Height =  $img3.Size.Height
+$pictureBox3.Image = $img3
+$pictureBox3.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
+$pictureBox3.Location=New-Object System.Drawing.Size(300,200)
+$form3.controls.add($pictureBox3)
+
+
+
+#Botón volver
+$Button60=New-Object System.Windows.Forms.Button
+$Button60.Size=New-Object System.Drawing.Size(75,23)
+$Button60.Text="Salir"
+$Button60.Location=New-Object System.Drawing.Size(200,350)
+#Añadir botón volver
+$Form3.Controls.Add($Button60)
+$Button60.add_click({$Form3.Close(),$Form2.Close()})
+
+
+$Form3.ShowDialog()
+
+
+})
+
+#Botón volver
+$Button6=New-Object System.Windows.Forms.Button
+$Button6.Size=New-Object System.Drawing.Size(75,23)
+$Button6.Text="Volver"
+$Button6.Location=New-Object System.Drawing.Size(250,300)
+#Añadir botón volver
+$Form2.Controls.Add($Button6)
+$Button6.add_click({$Form2.Close()})
+
+$Form2.ShowDialog()
+
+ })
+
+
+
+
+#Botón1-------------------------------------------------------------------------------------------------------
+$Button1=New-Object System.Windows.Forms.Button
+$Button1.Size=New-Object System.Drawing.Size(80,23)
+$Button1.Text="Acceder"
+$Button1.Location=New-Object System.Drawing.Size(200,250)
+#Añadir botón1
+$Form.Controls.Add($Button1)
+
+$Button1.add_click({
+#Formulario
+$Form4=New-Object System.Windows.Forms.Form
+$Form4.Text="Acceder"
+$Form4.Size=New-Object System.Drawing.Size(500,500)
+$Form4.StartPosition="CenterScreen"
+#Etiqueta
+$Label0=New-Object System.Windows.Forms.Label
+$Label0.Text="Introduce tus datos: "
+$Label0.AutoSize=$True
+$Label0.Location=New-Object System.Drawing.Size(200,100)
+#Añadir etiqueta
+$Form4.Controls.Add($Label0)
+
+#correo
+$textBox1 = New-Object System.Windows.Forms.TextBox
+$textBox1.Location = New-Object System.Drawing.Point(150,190)
+$label40 = New-Object System.Windows.Forms.Label
+$label40.Location = New-Object System.Drawing.Point(50,190)
+$label40.Size = New-Object System.Drawing.Size(80,20)
+$label40.Text = 'Correo:'
+$Form4.Controls.Add($label40)
+$textBox1.Size = New-Object System.Drawing.Size(260,20)
+$Form4.Controls.Add($textBox1)
+#contraseña
+$textBox1 = New-Object System.Windows.Forms.TextBox
+$textBox1.Location = New-Object System.Drawing.Point(150,230)
+$label50 = New-Object System.Windows.Forms.Label
+$label50.Location = New-Object System.Drawing.Point(50,230)
+$label50.Size = New-Object System.Drawing.Size(80,20)
+$label50.Text = 'Contraseña:'
+$Form4.Controls.Add($label50)
+$textBox1.Size = New-Object System.Drawing.Size(260,20)
+#contraseña oculta
+$textBox1.PasswordChar = '*'
+
+$Form4.Controls.Add($textBox1)
+
+#Botón registrar
+$Button50=New-Object System.Windows.Forms.Button
+$Button50.Size=New-Object System.Drawing.Size(75,23)
+$Button50.Text="Entrar"
+$Button50.Location=New-Object System.Drawing.Size(150,300)
+#Añadir botón resgistrar
+$Form4.Controls.Add($Button50)
+$Button50.add_click({
+#Formulario
+$Form3=New-Object System.Windows.Forms.Form
+$Form3.Text="Compra online Media Mark"
+$Form3.Size=New-Object System.Drawing.Size(500,500)
+$Form3.StartPosition="CenterScreen"
+#Etiqueta
+$Label6=New-Object System.Windows.Forms.Label
+$Label6.Text="BIENVENIDO"
+$Label6.AutoSize=$True
+$Label6.Location=New-Object System.Drawing.Size(200,50)
+#Añadir etiqueta
+$Form3.Controls.Add($Label6)
+
+$Picture = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga.jpg"))
+$img = [System.Drawing.Image]::Fromfile($Picture)
+$pictureBox = new-object Windows.Forms.PictureBox
+$pictureBox.Width =  $img.Size.Width
+$pictureBox.Height =  $img.Size.Height
+$pictureBox.Image = $img
+$pictureBox.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
+$pictureBox.Location=New-Object System.Drawing.Size(100,100)
+$form3.controls.add($pictureBox)
+
+$Picture1 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga1.jpg"))
+$img1 = [System.Drawing.Image]::Fromfile($Picture1)
+$pictureBox1 = new-object Windows.Forms.PictureBox
+$pictureBox1.Width =  $img1.Size.Width
+$pictureBox1.Height =  $img1.Size.Height
+$pictureBox1.Image = $img1
+$pictureBox1.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
+$pictureBox1.Location=New-Object System.Drawing.Size(300,100)
+$form3.controls.add($pictureBox1)
+
+$Picture2 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga2.jpg"))
+$img2 = [System.Drawing.Image]::Fromfile($Picture2)
+$pictureBox2 = new-object Windows.Forms.PictureBox
+$pictureBox2.Width =  $img2.Size.Width
+$pictureBox2.Height =  $img2.Size.Height
+$pictureBox2.Image = $img2
+$pictureBox2.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
+$pictureBox2.Location=New-Object System.Drawing.Size(100,200)
+$form3.controls.add($pictureBox2)
+
+$Picture3 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga3.jpg"))
+$img3 = [System.Drawing.Image]::Fromfile($Picture3)
+$pictureBox3 = new-object Windows.Forms.PictureBox
+$pictureBox3.Width =  $img3.Size.Width
+$pictureBox3.Height =  $img3.Size.Height
+$pictureBox3.Image = $img3
+$pictureBox3.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
+$pictureBox3.Location=New-Object System.Drawing.Size(300,200)
+$form3.controls.add($pictureBox3)
+
+
+#Botón volver
+$Button60=New-Object System.Windows.Forms.Button
+$Button60.Size=New-Object System.Drawing.Size(75,23)
+$Button60.Text="Salir"
+$Button60.Location=New-Object System.Drawing.Size(200,350)
+#Añadir botón volver
+$Form3.Controls.Add($Button60)
+$Button60.add_click({$Form3.Close(),$Form4.Close()})
+
+
+$Form3.ShowDialog()
+
+
+})
+#Botón volver
+$Button60=New-Object System.Windows.Forms.Button
+$Button60.Size=New-Object System.Drawing.Size(75,23)
+$Button60.Text="Salir"
+$Button60.Location=New-Object System.Drawing.Size(250,300)
+#Añadir botón volver
+$Form4.Controls.Add($Button60)
+$Button60.add_click({$Form4.Close()})
+
+$Form4.ShowDialog()
+
+
+})
+
+
+#Botón2------------------------------------------------------------------------------------
+$Button2=New-Object System.Windows.Forms.Button
+$Button2.Size=New-Object System.Drawing.Size(80,23)
+$Button2.Text="Promociones"
+$Button2.Location=New-Object System.Drawing.Size(200,300)
+#Añadir botón2
+$Form.Controls.Add($Button2)
+$Button2.add_click({
+
+#Formulario
+$Form3=New-Object System.Windows.Forms.Form
+$Form3.Text="Compra online Media Mark"
+$Form3.Size=New-Object System.Drawing.Size(500,500)
+$Form3.StartPosition="CenterScreen"
+#Etiqueta
+$Label6=New-Object System.Windows.Forms.Label
+$Label6.Text="BIENVENIDO"
+$Label6.AutoSize=$True
+$Label6.Location=New-Object System.Drawing.Size(200,50)
+#Añadir etiqueta
+$Form3.Controls.Add($Label6)
+
+
+$Picture = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga.jpg"))
+$img = [System.Drawing.Image]::Fromfile($Picture)
+$pictureBox = new-object Windows.Forms.PictureBox
+$pictureBox.Width =  $img.Size.Width
+$pictureBox.Height =  $img.Size.Height
+$pictureBox.Image = $img
+$pictureBox.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
+$pictureBox.Location=New-Object System.Drawing.Size(100,100)
+$form3.controls.add($pictureBox)
+
+$Picture1 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga1.jpg"))
+$img1 = [System.Drawing.Image]::Fromfile($Picture1)
+$pictureBox1 = new-object Windows.Forms.PictureBox
+$pictureBox1.Width =  $img1.Size.Width
+$pictureBox1.Height =  $img1.Size.Height
+$pictureBox1.Image = $img1
+$pictureBox1.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
+$pictureBox1.Location=New-Object System.Drawing.Size(300,100)
+$form3.controls.add($pictureBox1)
+
+$Picture2 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga2.jpg"))
+$img2 = [System.Drawing.Image]::Fromfile($Picture2)
+$pictureBox2 = new-object Windows.Forms.PictureBox
+$pictureBox2.Width =  $img2.Size.Width
+$pictureBox2.Height =  $img2.Size.Height
+$pictureBox2.Image = $img2
+$pictureBox2.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
+$pictureBox2.Location=New-Object System.Drawing.Size(100,200)
+$form3.controls.add($pictureBox2)
+
+$Picture3 = (get-item ("C:\Users\Usuario DAM 1\Desktop\Nueva carpeta\descarga3.jpg"))
+$img3 = [System.Drawing.Image]::Fromfile($Picture3)
+$pictureBox3 = new-object Windows.Forms.PictureBox
+$pictureBox3.Width =  $img3.Size.Width
+$pictureBox3.Height =  $img3.Size.Height
+$pictureBox3.Image = $img3
+$pictureBox3.Anchor = [System.Windows.Forms.AnchorStyles]::Bottom
+$pictureBox3.Location=New-Object System.Drawing.Size(300,200)
+$form3.controls.add($pictureBox3)
+
+
+
+
+#Botón volver
+$Button60=New-Object System.Windows.Forms.Button
+$Button60.Size=New-Object System.Drawing.Size(75,23)
+$Button60.Text="Salir"
+$Button60.Location=New-Object System.Drawing.Size(200,350)
+#Añadir botón volver
+$Form3.Controls.Add($Button60)
+$Button60.add_click({$Form3.Close()})
+
+
+$Form3.ShowDialog()
+
+
+})
+
+
+#Botón3------------------------------------------------------------------------------------
+$Button3=New-Object System.Windows.Forms.Button
+$Button3.Size=New-Object System.Drawing.Size(80,23)
+$Button3.Text="Salir"
+$Button3.Location=New-Object System.Drawing.Size(200,350)
+#Añadir botón3
+$Form.Controls.Add($Button3)
+#Defino el evento al hacer el clic
+$Button3.Add_Click({$Form.Close()})
+
+
+$Form.ShowDialog()
